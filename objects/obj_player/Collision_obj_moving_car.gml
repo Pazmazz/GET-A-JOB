@@ -1,0 +1,1 @@
+room_goto(rm_gmae_over_dead);

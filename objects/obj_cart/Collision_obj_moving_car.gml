@@ -1,0 +1,1 @@
+global.boss_anger += 10;
