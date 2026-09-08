@@ -17,8 +17,8 @@
   ],
   "name":"rm_init",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Loading Rooms",
+    "path":"folders/Rooms/Loading Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

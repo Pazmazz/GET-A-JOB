@@ -490,8 +490,8 @@
   ],
   "name":"rm_mapgen_test",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Debug Rooms",
+    "path":"folders/Rooms/Debug Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

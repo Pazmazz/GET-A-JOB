@@ -35,8 +35,19 @@ function assign_chunk_weight(orig_x, orig_y){
 	return weight;
 }
 
+/**
+ * @func Return the maximum amount of carts that can spawn in a specific chunk based on its weight
+ * @param {real} weight The probability weight of the chunk
+ * @returns {real} Return the maximum amount of carts that can spawn
+ */
 function get_cart_spawn_count(weight){
 	var trials = MAX_CART_SPAWNS_IN_CHUNK;
+	/*Here, we roll a number ranging from 0 to 1 
+	 *and we see where that number falls on the cumulative 
+	 *distrition formula. That is, is adding all the probabilities 
+	 *until it equals 1 and drawing "barriers" on the number line
+	 *to represent probability bounderies
+	 */
 	var p0 = binomial_probability(trials, 0, weight);
 	var p1 = binomial_probability(trials, 1, weight);
 	var p2 = binomial_probability(trials, 2, weight);
