@@ -30,7 +30,7 @@ if (keyboard_check_pressed(vk_space)){
 	
 	if (hit){
 		with (hit){
-			if(!attached){
+			if(!attached && global.cart_stack <= 4){
 				attached = true;
 				player_instance = player;
 				global.cart_stack++;
