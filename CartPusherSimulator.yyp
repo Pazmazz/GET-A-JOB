@@ -89,8 +89,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
-    {"roomId":{"name":"rm_cart_test","path":"rooms/rm_cart_test/rm_cart_test.yy",},},
     {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
+    {"roomId":{"name":"rm_cart_test","path":"rooms/rm_cart_test/rm_cart_test.yy",},},
     {"roomId":{"name":"rm_mapgen_test2","path":"rooms/rm_mapgen_test2/rm_mapgen_test2.yy",},},
     {"roomId":{"name":"rm_math_test","path":"rooms/rm_math_test/rm_math_test.yy",},},
     {"roomId":{"name":"rm_mapgen_test","path":"rooms/rm_mapgen_test/rm_mapgen_test.yy",},},
