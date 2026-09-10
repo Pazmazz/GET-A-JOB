@@ -30,11 +30,14 @@ if (keyboard_check_pressed(vk_space)){
 	
 	if (hit){
 		with (hit){
-			if(!attached && global.cart_stack <= 4){
+			if(!attached && global.cart_stack < 5){
+				log("[Game Master] Shopping cart stacked");
 				attached = true;
 				player_instance = player;
 				global.cart_stack++;
 				offset_y = make_negative(-30 + global.cart_stack * 50);
+			} else {
+				log("[Game Master] Shopping cart stack is too high!");
 			}
 		}
 	}
