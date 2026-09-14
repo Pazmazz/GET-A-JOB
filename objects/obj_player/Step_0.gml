@@ -1,44 +1,63 @@
+// Cart stack number
+var cart_stack_num = array_length(global.cart_stack);
+
+// Update speed related variables in real time
+var speed_multiplier = 1 - (.10 * cart_stack_num); // Markiplier...
+speed_multiplier = max(speed_multiplier, 0);
+current_speed = base_speed * speed_multiplier;
+
 // Basic movement
-if (keyboard_check(ord("A"))){
-	x -= walk_speed; // Move to the left
+if (MOVE_LEFT)){
+	x -= current_speed; // Move to the left
 	direction = 180;
 }
-if (keyboard_check(ord("D"))){
-	x += walk_speed; // Move to the right
+if (MOVE_RIGHT)){
+	x += current_speed; // Move to the right
 	direction = 0;
 }
-if (keyboard_check(ord("W"))){
-	y -= walk_speed; // Move up
+if (MOVE_UP)){
+	y -= current_speed; // Move up
 	direction = 90;
 }
-if (keyboard_check(ord("S"))){
-	y += walk_speed; // Move down
+if (MOVE_DOWN)){
+	y += current_speed; // Move down
 	direction = 270;
 }
 
-// Variables for collision line
-_x1 = x;
-_y1 = y;
-_x2 = x + lengthdir_x(80, direction);
-_y2 = y + lengthdir_y(80, direction);
+// Tracking player movement speed
+average_speed = point_distance(previous_x, previous_y, x, y);
+previous_x = x;
+previous_y = y;
 
-hit = collision_line(_x1, _y1, _x2, _y2, obj_cart, 1, 0);
+// Variables for collision rectangle
+_x1 = x - 50;
+_y1 = y - 80;
+_x2 = x + 50;
+_y2 = y + 20;
 
-if (keyboard_check_pressed(vk_space)){
-	var interactable_parent = obj_cart;
+inst = collision_rectangle(_x1, _y1, _x2, _y2, obj_cart, false, false);
+
+if (INTERACT_KEY && inst != noone){
 	var player = id;
 	
-	if (hit){
-		with (hit){
-			if(!attached && global.cart_stack < 5){
-				log("[Game Master] Shopping cart stacked");
-				attached = true;
-				player_instance = player;
-				global.cart_stack++;
-				offset_y = make_negative(-30 + global.cart_stack * 50);
-			} else {
-				log("[Game Master] Shopping cart stack is too high!");
-			}
+	with (inst){
+		if(!attached && cart_stack_num < 5){
+			log("[Game Master] Shopping cart stacked");
+			attached = true;
+			player_instance = player;
+			array_insert(global.cart_stack, cart_stack_num - 1, id);
+			offset_y = make_negative(30 + cart_stack_num * 50);
+		} else {
+			log("[Game Master] Shopping cart stack is too high!");
+		}
+	}
+}
+
+if (DISMOUNT_KEY && cart_stack_num > 0){
+	for (var i = 0; i < cart_stack_num - 1; i++){
+		with (global.cart_stack[i]){
+			attached = false;
+			array_delete(global.cart_stack, 0, 1);
 		}
 	}
 }

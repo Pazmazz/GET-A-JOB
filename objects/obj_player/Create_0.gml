@@ -1,12 +1,18 @@
 object_tag = PLAYER;
 
 // Base movement speed 
-walk_speed = 6;
+base_speed = 6;
+current_speed = 0;
 
-// Variables for collision line
-_x1 = x;
-_y1 = y;
-_x2 = x + lengthdir_x(80, direction);
-_y2 = y + lengthdir_y(80, direction);
+// Variables for tracking average speed
+var average_speed = 0;
+previous_x = x;
+previous_y = y;
 
-hit = collision_line(_x1, _y1, _x2, _y2, obj_cart, 1, 0);
+// Variables for collision rectangle
+_x1 = 0;
+_y1 = 0;
+_x2 = 0;
+_y2 = 0;
+
+inst = noone;

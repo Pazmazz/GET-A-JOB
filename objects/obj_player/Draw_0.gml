@@ -3,9 +3,9 @@ draw_self();
 // Debug for drawing collison lines and hitbox
 if(global.debug){
 	// Collison lines
-	var line_color = (hit != noone) ? c_lime : c_red;
+	var line_color = (inst != noone) ? c_blue : c_red;
 	draw_set_colour(line_color);
-	draw_line(_x1, _y1, _x2, _y2);
+	draw_rectangle(_x1, _y1, _x2, _y2, true);
 	
 	// Hitbox
 	draw_set_color(c_lime);
