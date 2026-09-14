@@ -37,27 +37,34 @@ _y2 = y + 20;
 
 inst = collision_rectangle(_x1, _y1, _x2, _y2, obj_cart, false, false);
 
+// Interacting with and picking up shopping cart
 if (INTERACT_KEY && inst != noone){
 	var player = id;
 	
 	with (inst){
-		if(!attached && cart_stack_num < 5){
+		// You can only pick up a cart if you are carrying less 
+		// than 5 carts and you are not already carring it
+		if(!attached && cart_stack_num < 5){ 
 			log("[Game Master] Shopping cart stacked");
 			attached = true;
 			player_instance = player;
 			array_insert(global.cart_stack, cart_stack_num - 1, id);
-			offset_y = make_negative(30 + cart_stack_num * 50);
-		} else {
+			offset_y = make_negative(30 + cart_stack_num * 50); // Make the cart visually appear in front of the player
+		} else if (cart_stack_num >= 5){
 			log("[Game Master] Shopping cart stack is too high!");
+		} else {
+			log("[Game Master] There are no carts to pick up");
 		}
 	}
 }
 
 if (DISMOUNT_KEY && cart_stack_num > 0){
-	for (var i = 0; i < cart_stack_num - 1; i++){
+	for (var i = 0; i < cart_stack_num; i++){
+		log("[Game Master] Cart index: " + string(i));
+		log("[Game Master] Cart stack length: " + string(array_length(global.cart_stack)));
 		with (global.cart_stack[i]){
 			attached = false;
-			array_delete(global.cart_stack, 0, 1);
 		}
 	}
+	array_delete(global.cart_stack, 0, 5);
 }
