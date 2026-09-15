@@ -15,6 +15,7 @@
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Camera","folderPath":"folders/Objects/Camera.yy","name":"Camera","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Carts","folderPath":"folders/Objects/Carts.yy","name":"Carts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Chunks","folderPath":"folders/Objects/Chunks.yy","name":"Chunks","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Debug","folderPath":"folders/Objects/Debug.yy","name":"Debug","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -45,6 +46,7 @@
   },
   "name":"CartPusherSimulator",
   "resources":[
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_car","path":"objects/obj_car/obj_car.yy",},},
     {"id":{"name":"obj_cart_return","path":"objects/obj_cart_return/obj_cart_return.yy",},},
     {"id":{"name":"obj_cart","path":"objects/obj_cart/obj_cart.yy",},},
@@ -52,6 +54,7 @@
     {"id":{"name":"obj_debugger","path":"objects/obj_debugger/obj_debugger.yy",},},
     {"id":{"name":"obj_guarantee_chunk","path":"objects/obj_guarantee_chunk/obj_guarantee_chunk.yy",},},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},},
+    {"id":{"name":"obj_map_cart","path":"objects/obj_map_cart/obj_map_cart.yy",},},
     {"id":{"name":"obj_moving_car","path":"objects/obj_moving_car/obj_moving_car.yy",},},
     {"id":{"name":"obj_normal_chunk","path":"objects/obj_normal_chunk/obj_normal_chunk.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
@@ -89,8 +92,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
-    {"roomId":{"name":"rm_cart_test","path":"rooms/rm_cart_test/rm_cart_test.yy",},},
     {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
+    {"roomId":{"name":"rm_cart_test","path":"rooms/rm_cart_test/rm_cart_test.yy",},},
     {"roomId":{"name":"rm_mapgen_test2","path":"rooms/rm_mapgen_test2/rm_mapgen_test2.yy",},},
     {"roomId":{"name":"rm_math_test","path":"rooms/rm_math_test/rm_math_test.yy",},},
     {"roomId":{"name":"rm_mapgen_test","path":"rooms/rm_mapgen_test/rm_mapgen_test.yy",},},

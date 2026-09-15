@@ -17,6 +17,7 @@ function init_macros(){
 	#macro CUSTOMER "Customer"
 	#macro CAR "Parked Car"
 	#macro MOVING_CAR "Moving Car"
+	#macro CAMERA "Camera"
 	
 	// Contants
 	#macro MAX_CART_SPAWNS 20
