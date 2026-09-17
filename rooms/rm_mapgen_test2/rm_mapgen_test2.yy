@@ -7,7 +7,6 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_DA82154","path":"rooms/rm_mapgen_test2/rm_mapgen_test2.yy",},
-    {"name":"inst_22EAB7C3","path":"rooms/rm_mapgen_test2/rm_mapgen_test2.yy",},
     {"name":"inst_3A4FA7BB","path":"rooms/rm_mapgen_test2/rm_mapgen_test2.yy",},
     {"name":"inst_3E0712F1","path":"rooms/rm_mapgen_test2/rm_mapgen_test2.yy",},
     {"name":"inst_306ED680","path":"rooms/rm_mapgen_test2/rm_mapgen_test2.yy",},
@@ -57,6 +56,7 @@
     {"name":"inst_6F56A11B","path":"rooms/rm_mapgen_test2/rm_mapgen_test2.yy",},
     {"name":"inst_4F020E45","path":"rooms/rm_mapgen_test2/rm_mapgen_test2.yy",},
     {"name":"inst_3D969F88","path":"rooms/rm_mapgen_test2/rm_mapgen_test2.yy",},
+    {"name":"inst_22EAB7C3","path":"rooms/rm_mapgen_test2/rm_mapgen_test2.yy",},
   ],
   "isDnd":false,
   "layers":[

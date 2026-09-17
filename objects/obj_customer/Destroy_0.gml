@@ -1,0 +1,1 @@
+path_delete(path_to_player);

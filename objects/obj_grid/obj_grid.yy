@@ -1,18 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_car",
-  "eventList":[],
+  "%Name":"obj_grid",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_car",
+  "name":"obj_grid",
   "overriddenProperties":[],
   "parent":{
-    "name":"Obstacles",
-    "path":"folders/Objects/Obstacles.yy",
+    "name":"Utility",
+    "path":"folders/Objects/Utility.yy",
   },
-  "parentObjectId":{
-    "name":"obj_obstacles",
-    "path":"objects/obj_obstacles/obj_obstacles.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -29,11 +28,8 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
-  "spriteId":{
-    "name":"spr_car",
-    "path":"sprites/spr_car/spr_car.yy",
-  },
+  "solid":false,
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

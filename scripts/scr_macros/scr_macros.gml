@@ -19,6 +19,10 @@ function init_macros(){
 	#macro MOVING_CAR "Moving Car"
 	#macro CAMERA "Camera"
 	
+	// Object tpyes
+	#macro OBSTACLE "Obstacle"
+	#macro ENTITY "Entity"
+	
 	// Contants
 	#macro MAX_CART_SPAWNS 20
 	#macro MAX_CART_SPAWNS_IN_CHUNK 3
