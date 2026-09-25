@@ -1,5 +1,9 @@
 switch (aggro_state){
-	case 0:
+	case "passive":
+		
+	break;
+	
+	case "aggresive":
 		
 	break;
 }

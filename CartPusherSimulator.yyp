@@ -81,6 +81,7 @@
     {"id":{"name":"scr_logging","path":"scripts/scr_logging/scr_logging.yy",},},
     {"id":{"name":"scr_macros","path":"scripts/scr_macros/scr_macros.yy",},},
     {"id":{"name":"scr_map_generation","path":"scripts/scr_map_generation/scr_map_generation.yy",},},
+    {"id":{"name":"scr_settings","path":"scripts/scr_settings/scr_settings.yy",},},
     {"id":{"name":"spr_car","path":"sprites/spr_car/spr_car.yy",},},
     {"id":{"name":"spr_cart_return","path":"sprites/spr_cart_return/spr_cart_return.yy",},},
     {"id":{"name":"spr_cart","path":"sprites/spr_cart/spr_cart.yy",},},
