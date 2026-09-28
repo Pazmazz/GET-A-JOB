@@ -22,11 +22,10 @@ if (instance_exists(obj_player)){
 			alarm[0] = 600;
 		} else {
 			// Wander in a random direction
-			target_x = random_range(x - 100, x + 100);
-			target_y = random_range(y - 100, y + 100);
-			log("[Game Master] Customer moving to " + string(target_x) + ", " + string(target_y));
+			var target_pos = random_direction();
+			log("[Game Master] Customer moving to " + string(target_pos[0]) + ", " + string(target_pos[1]));
 	
-			mp_potential_step(target_x, target_y, walk_speed, true);
+			mp_potential_step(target_pos[0], target_pos[1], walk_speed, true);
 			alarm[0] = 600;
 		}
 	}
