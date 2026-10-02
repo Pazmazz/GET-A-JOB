@@ -1,3 +1,5 @@
+if (is_moving) exit;
+
 if (instance_exists(obj_player)){
 	var dist = point_distance(x, y, obj_player.x, obj_player.y);
 	
@@ -11,22 +13,24 @@ if (instance_exists(obj_player)){
 			log("No path found");
 		}
 	} else {
-		path_end(); // End path if there is one
+		path_end(); // End path if one exist
 		
 		// Pick a number 0 through 1. 0 Means stand still. 1 means to wander.
 		var choice = random(1); 
 		if (choice < 0.6) {
 			// Stand still
-			log("[Game Master] Customer standing still");
 			speed = 0;
 			alarm[0] = 600;
 		} else {
 			// Wander in a random direction
 			var target_pos = random_direction();
-			log("[Game Master] Customer moving to " + string(target_pos[0]) + ", " + string(target_pos[1]));
-	
-			mp_potential_step(target_pos[0], target_pos[1], walk_speed, true);
-			alarm[0] = 600;
+			
+			target_x = target_pos[0];
+			target_y = target_pos[1];
+			
+			is_moving = true;
+			stuck_timer = 0;
+			log("[Game Master] Customer moving to " + string(target_x) + ", " + string(target_y));
 		}
 	}
 }
