@@ -37,8 +37,8 @@ for (var i = array_size - 1; i >= 0; i--) {
 	pos_y[i] = y;
 }
 
-var follower_1 = instance_create_layer(x,y, "Instances", obj_man);
-	follower_1.followDist = 45;
+//var follower_1 = instance_create_layer(x,y, "Instances", obj_man);
+//	follower_1.followDist = 45;
 	
-var follower_2 = instance_create_layer(x,y, "Instances", obj_Mom);
-	follower_2.followDist = 30;
+//var follower_2 = instance_create_layer(x,y, "Instances", obj_Mom);
+//	follower_2.followDist = 30;

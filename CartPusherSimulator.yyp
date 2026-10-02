@@ -47,7 +47,6 @@
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"words.json","CopyToMask":-1,"filePath":"datafiles/dialogue","name":"words.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"words.json","CopyToMask":-1,"filePath":"datafiles","name":"words.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
@@ -56,6 +55,7 @@
   },
   "name":"CartPusherSimulator",
   "resources":[
+    {"id":{"name":"font_standard","path":"fonts/font_standard/font_standard.yy",},},
     {"id":{"name":"obj_bed","path":"objects/obj_bed/obj_bed.yy",},},
     {"id":{"name":"obj_car","path":"objects/obj_car/obj_car.yy",},},
     {"id":{"name":"obj_cart_return","path":"objects/obj_cart_return/obj_cart_return.yy",},},
@@ -125,6 +125,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
+    {"roomId":{"name":"rm_strange","path":"rooms/rm_strange/rm_strange.yy",},},
     {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"roomId":{"name":"rm_cart_test","path":"rooms/rm_cart_test/rm_cart_test.yy",},},
     {"roomId":{"name":"rm_mapgen_test2","path":"rooms/rm_mapgen_test2/rm_mapgen_test2.yy",},},
@@ -132,7 +133,6 @@
     {"roomId":{"name":"rm_mapgen_test","path":"rooms/rm_mapgen_test/rm_mapgen_test.yy",},},
     {"roomId":{"name":"rm_game_over_fired","path":"rooms/rm_game_over_fired/rm_game_over_fired.yy",},},
     {"roomId":{"name":"rm_gmae_over_dead","path":"rooms/rm_gmae_over_dead/rm_gmae_over_dead.yy",},},
-    {"roomId":{"name":"rm_strange","path":"rooms/rm_strange/rm_strange.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

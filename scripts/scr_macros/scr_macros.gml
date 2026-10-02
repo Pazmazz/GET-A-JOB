@@ -10,4 +10,11 @@ function init_macros(){
 	// Contants
 	#macro MAX_CART_SPAWNS 20
 	#macro MAX_CART_SPAWNS_IN_CHUNK 3
+	
+	//Kid Macros
+	#macro RIGHT 0
+	#macro UP 1
+	#macro LEFT 2
+	#macro DOWN 3
+
 }
