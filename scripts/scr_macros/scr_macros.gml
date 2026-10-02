@@ -32,5 +32,10 @@ function init_macros(){
 	#macro UP 1
 	#macro LEFT 2
 	#macro DOWN 3
+	
+	//Font things
+	#macro TEXT_FONT font_standard
+	#macro TEXT_COLOR c_white
+	#macro TEXT_SELECT_COLOR c_aqua
 
 }

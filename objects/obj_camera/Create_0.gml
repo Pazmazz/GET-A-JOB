@@ -1,10 +1,14 @@
 object_tag = CAMERA;
 
-#macro RES_W 1280
-#macro RES_H 720
+#macro RES_W 800
+#macro RES_H 600
 #macro RES_SCALE 1
 
 #macro CAM_SMOOTH 0.9
+
+//initailize targets for kid vs player
+targetX = 0;
+targetY = 0;
 
 // Enable views
 view_enabled = true;

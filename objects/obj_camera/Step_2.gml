@@ -3,8 +3,13 @@ var camX = camera_get_view_x(camera);
 var camY = camera_get_view_y(camera);
 
 // Set target camera position
-var targetX = obj_player.x - RES_W/2;
-var targetY = obj_player.y - RES_H/2;
+if (instance_exists(obj_player)){
+	targetX = obj_player.x - RES_W/2;
+	targetY = obj_player.y - RES_H/2;
+} else if (instance_exists(obj_kid)){
+	targetX = obj_kid.x - RES_W/2;
+	targetY = obj_kid.y - RES_H/2;
+}
 // log("[Camera] You should be moving right about now");
 
 // Clamp the target to room bounds
