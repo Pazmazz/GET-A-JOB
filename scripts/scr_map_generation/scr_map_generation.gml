@@ -1,5 +1,5 @@
 /**
-*@function Get the world spawn X and Y and returns it as an array. X is array position 0 and Y is array position 1.
+* @function Get the world spawn X and Y and returns it as an array. X is array position 0 and Y is array position 1.
 */
 function get_spawn_pos(){
 	if (!instance_exists(obj_spawn_marker)) return;
@@ -10,9 +10,9 @@ function get_spawn_pos(){
 }
 
 /**
-*@function Get and return the distance the current chunk is away from the spawn chunk.
-*@param orig_x Current chunk's origin point X.
-*@param orig_y Current chunk's origin point Y.
+* @function Get and return the distance the current chunk is away from the spawn chunk.
+* @param orig_x Current chunk's origin point X.
+* @param orig_y Current chunk's origin point Y.
 */
 function get_distance_from_spawn(orig_x, orig_y){
 	var spawn_corrds_vector = get_spawn_pos();
@@ -23,9 +23,9 @@ function get_distance_from_spawn(orig_x, orig_y){
 }
 
 /**
-*@function Assigns a weight to a chunk based on the distance it is way from the spawn chunk.
-*@param orig_x Current chunk's origin point X.
-*@param orig_y Current chunk's origin point Y.
+* @function Assigns a weight to a chunk based on the distance it is way from the spawn chunk.
+* @param orig_x Current chunk's origin point X.
+* @param orig_y Current chunk's origin point Y.
 */
 function assign_chunk_weight(orig_x, orig_y){
 	var dist = get_distance_from_spawn(orig_x, orig_y);
@@ -42,6 +42,7 @@ function assign_chunk_weight(orig_x, orig_y){
  */
 function get_cart_spawn_count(weight){
 	var trials = MAX_CART_SPAWNS_IN_CHUNK;
+	
 	/*Here, we roll a number ranging from 0 to 1 
 	 *and we see where that number falls on the cumulative 
 	 *distrition formula. That is, is adding all the probabilities 

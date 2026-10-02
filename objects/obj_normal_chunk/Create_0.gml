@@ -4,6 +4,9 @@ object_tag = CHUNK;
 origin_x = x + 256;
 origin_y = y + 256;
 
+// Ensures carts are not created endlessly
+carts_spawned = false;
+
 // The weight of the chunk that determins it's cart spawn rates
 weight = assign_chunk_weight(origin_x, origin_y);
 log("[MapGen] Chunk at " + string(origin_x) + ", " + string(origin_y) + " assigned weight: " + string(weight));

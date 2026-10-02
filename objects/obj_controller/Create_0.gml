@@ -1,4 +1,4 @@
-global.cart_stack = 0;
+global.cart_stack = [];
 global.debug = false;
 total_carts = get_cart_amount();
 global.carts_returned = 0;
