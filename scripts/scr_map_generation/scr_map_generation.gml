@@ -18,7 +18,6 @@ function get_distance_from_spawn(orig_x, orig_y){
 	var spawn_corrds_vector = get_spawn_pos();
 	
 	var dist = point_distance(orig_x, orig_y, spawn_corrds_vector[0], spawn_corrds_vector[1]); 
-	//show_debug_message("[Calculations] Distance: " + string(dist));
 	return dist;
 }
 
