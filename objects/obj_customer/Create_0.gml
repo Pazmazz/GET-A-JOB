@@ -3,7 +3,7 @@ object_tag = CUSTOMER;
 path_to_player = path_add(); // The shortest path to the player accounting for obstacles
 walk_speed = 0; // Walk speed of the customer
 detect_range = 0; // Player detection range
-walk_length = 100; // How far the customer wanders during wander mode
+walk_length = 50; // How far the customer wanders during wander mode
 is_moving = false; // If the NPC is in movement or not
 stuck_timer = 0; // Fail safe incase the NPC gets stuck on a wall
 

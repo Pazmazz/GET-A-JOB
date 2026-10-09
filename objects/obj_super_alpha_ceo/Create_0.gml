@@ -1,4 +1,4 @@
 event_inherited();
 
-walk_speed = 5;
+walk_speed = 9;
 detect_range = 384;

@@ -7,7 +7,20 @@ origin_y = y + 256;
 // Ensures carts are not created endlessly
 carts_spawned = false;
 
+// When the chunk is first loaded in
+first_load = false;
+
+// After the chunk is first loaded in, keep it loaded until the player moves way
+stay_loaded = false;
+
+// Failsafe to keep the chunk from reloading every step, causing multiple customers to spawn at once
+can_reload = true;
+
+// If the chunk is loaded by the player or not
 loaded = false;
+
+// If the chunk can spawn a customer or not
+can_spawn_customer = true;
 
 // The weight of the chunk that determins it's cart spawn rates
 weight = assign_chunk_weight(origin_x, origin_y);
