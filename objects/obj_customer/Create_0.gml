@@ -14,7 +14,7 @@ alarm[0] = 1;
 
 function random_direction(){
 	var choice1 = irandom(10); // Roll a number to determine if the customer wonders in the x or y direction
-	var choice2 = irandom(10); // Roll a number to determine if the customer moves in a negative or pissive direction
+	var choice2 = irandom(10); // Roll a number to determine if the customer moves in a negative or postive direction
 	
 	if (choice1 <= 5){
 		if (choice2 <= 5){
@@ -37,6 +37,6 @@ function random_direction(){
 	return [target_x, target_y];
 	
 	//var dir = [0, 90, 180, 270];
-	//return [lengthdir_x(walk_length, irandom(array_length(dir - 1))), lengthdir_y(walk_length, irandom(array_length(dir - 1)))]
+	//return [lengthdir_x(walk_length, irandom(array_length(dir) - 1)), lengthdir_y(walk_length, irandom(array_length(dir) - 1))];
 }
 

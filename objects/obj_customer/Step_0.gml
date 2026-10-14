@@ -11,13 +11,14 @@ if (is_moving) {
     var old_x = x;
     var old_y = y;
 
-    mp_potential_step(target_x, target_y, walk_speed, true);
+    mp_potential_step(target_x, target_y, walk_speed, false);
 
     var arrived = point_distance(x, y, target_x, target_y) <= walk_speed;
 	
 	// Start the stuck timer of the NPC hasn't moved in a while
     if (x == old_x && y == old_y){
 		stuck_timer++;
+		log("[Game Master] Stuck timer is increasing");
 	} else {
 		stuck_timer = 0;
 	}
