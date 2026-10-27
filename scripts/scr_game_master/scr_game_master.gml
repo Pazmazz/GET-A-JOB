@@ -17,3 +17,8 @@ function get_win_amount(){
 function create_fake_cart(cart_num){
 	var offset_y = make_negative(30 + cart_num * 50); // Make the cart visually appear in front of the player
 }
+
+function init_round_count(){
+	global.round_count = 0;
+}
+

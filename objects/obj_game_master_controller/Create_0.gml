@@ -11,3 +11,6 @@ win_condition = 0;
 // Boss meter related variables
 init_boss_meter();
 max_boss_meter = 100;
+
+// Initialize the round count
+init_round_count();
