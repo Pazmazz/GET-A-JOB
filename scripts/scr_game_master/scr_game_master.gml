@@ -10,8 +10,7 @@ function get_cart_amount(){
 *@function Gets the minimum amount of carts that need to win the round
 */
 function get_win_amount(){
-	var cart_num = get_cart_amount();
-	return cart_num * 0.8;
+	return floor(global.total_carts * 0.8);
 }
 
 function create_fake_cart(cart_num){

@@ -3,7 +3,7 @@ if (global.debug){
 	draw_text(10, 10, "DEBUG mode ENABLED");
 	draw_text(10, 25, "Current cart stack: " + string(array_length(global.cart_stack)));
 	draw_text(10, 40, "Current position(X,Y) " + string(obj_player.x) + ", " + string(obj_player.y));
-	draw_text(10, 55, "Total cart amount: " + string(obj_game_master_controller.total_carts));
+	draw_text(10, 55, "Total cart amount: " + string(global.total_carts));
 	draw_text(10, 70, "Carts returned: " + string(global.carts_returned));
 	draw_text(10, 85, "Win condition: " + string(obj_game_master_controller.win_condition));
 	draw_text(10, 100, "Current boss anger: " + string(global.boss_anger));

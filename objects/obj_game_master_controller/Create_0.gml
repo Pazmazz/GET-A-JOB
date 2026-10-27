@@ -14,3 +14,6 @@ max_boss_meter = 100;
 
 // Initialize the round count
 init_round_count();
+
+timer_seconds = 120;
+alarm[0] = ROOM_SPEED;

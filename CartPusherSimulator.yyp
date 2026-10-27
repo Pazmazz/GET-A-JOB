@@ -92,6 +92,7 @@
     {"id":{"name":"rm_math_test","path":"rooms/rm_math_test/rm_math_test.yy",},},
     {"id":{"name":"rm_reserve_chunk_layout_park","path":"rooms/rm_reserve_chunk_layout_park/rm_reserve_chunk_layout_park.yy",},},
     {"id":{"name":"rm_reserve_chunk_layout_return","path":"rooms/rm_reserve_chunk_layout_return/rm_reserve_chunk_layout_return.yy",},},
+    {"id":{"name":"rm_success","path":"rooms/rm_success/rm_success.yy",},},
     {"id":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"id":{"name":"scr_boss","path":"scripts/scr_boss/scr_boss.yy",},},
     {"id":{"name":"scr_calculations","path":"scripts/scr_calculations/scr_calculations.yy",},},
@@ -119,6 +120,7 @@
     {"id":{"name":"spr_reserved_chunk","path":"sprites/spr_reserved_chunk/spr_reserved_chunk.yy",},},
     {"id":{"name":"spr_spawn_chunk","path":"sprites/spr_spawn_chunk/spr_spawn_chunk.yy",},},
     {"id":{"name":"spr_spawn_marker","path":"sprites/spr_spawn_marker/spr_spawn_marker.yy",},},
+    {"id":{"name":"spr_win","path":"sprites/spr_win/spr_win.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
@@ -136,6 +138,7 @@
     {"roomId":{"name":"rm_cart_return_layout","path":"rooms/rm_cart_return_layout/rm_cart_return_layout.yy",},},
     {"roomId":{"name":"rm_reserve_chunk_layout_park","path":"rooms/rm_reserve_chunk_layout_park/rm_reserve_chunk_layout_park.yy",},},
     {"roomId":{"name":"rm_reserve_chunk_layout_return","path":"rooms/rm_reserve_chunk_layout_return/rm_reserve_chunk_layout_return.yy",},},
+    {"roomId":{"name":"rm_success","path":"rooms/rm_success/rm_success.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
