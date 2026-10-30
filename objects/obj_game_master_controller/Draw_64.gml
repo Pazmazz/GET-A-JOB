@@ -8,8 +8,8 @@ if (!global.debug){
 	// Draw completion meter
 	draw_set_colour(c_green);
 	draw_text(20, 30, "Carts Returned");
-	draw_healthbar(20, 50, 180, 70, (global.carts_returned / global.total_carts) * 100, c_black, c_lime, c_green, 0, true, true);
-	draw_text(190, 50, string((global.carts_returned / global.total_carts) * 100) + "%");
+	draw_healthbar(20, 50, 180, 70, (global.carts_returned / global.total_carts) * 100, c_black, c_green, c_lime, 0, true, true);
+	draw_text(190, 50, string(floor((global.carts_returned / global.total_carts) * 100)) + "%");
 
 	// Draws boss anger meter
 	draw_set_colour(c_red);

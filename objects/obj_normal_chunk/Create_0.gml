@@ -28,3 +28,6 @@ log("[MapGen] Chunk at " + string(origin_x) + ", " + string(origin_y) + " assign
 
 count = get_cart_spawn_count(weight);
 log("[MapGen] Chunk at " + string(origin_x) + ", " + string(origin_y) + " has max cart spawn of: " + string(count));
+
+global.chunks_contructed++;
+log("[MapGen] Chunks contructed: " + string(global.chunks_contructed));

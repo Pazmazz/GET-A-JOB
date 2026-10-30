@@ -6,3 +6,5 @@ grid_height = room_height / cell_size;
 global.mp_grid = mp_grid_create(0, 0, grid_width, grid_height, cell_size, cell_size);
 
 mp_grid_add_instances(global.mp_grid, obj_obstacles, false);
+mp_grid_add_instances(global.mp_grid, obj_reserved_chunk, false);
+mp_grid_add_instances(global.mp_grid, obj_guarantee_chunk, false);

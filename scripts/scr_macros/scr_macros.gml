@@ -24,6 +24,6 @@ function init_macros(){
 	#macro ENTITY "Entity"
 	
 	// Contants
-	#macro MAX_CART_SPAWNS 50
+	#macro MAX_CART_SPAWNS 20
 	#macro MAX_CART_SPAWNS_IN_CHUNK 3
 }

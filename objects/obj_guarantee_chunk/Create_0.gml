@@ -20,3 +20,5 @@ instance_create_layer(x + 160, y + 384, "Carts", obj_map_cart);
 instance_create_layer(x + 256, y + 384, "Carts", obj_map_cart);
 instance_create_layer(x + 352, y + 384, "Carts", obj_map_cart);
 instance_create_layer(x + 448, y + 384, "Carts", obj_map_cart);
+
+global.total_carts += 10;
