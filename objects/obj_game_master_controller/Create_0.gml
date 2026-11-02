@@ -13,7 +13,7 @@ init_boss_meter();
 max_boss_meter = 100;
 
 // Initialize the round count
-init_round_count();
+global.round_count++;
 
 end_round = false;
 

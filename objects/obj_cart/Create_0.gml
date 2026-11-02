@@ -5,3 +5,5 @@ offset_x = 0;
 offset_y = 0;
 
 hit_cool_down = 0;
+
+global.can_dismount = true;

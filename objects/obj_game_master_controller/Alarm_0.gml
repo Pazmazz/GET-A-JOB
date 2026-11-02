@@ -3,6 +3,7 @@ if (timer_seconds <= 0) {
 	if(global.carts_returned < global.win_condition){
 		room_goto(rm_game_over_fired);
 	} else {
+		global.boss_anger += 40;
 		room_goto(rm_success);
 	}
 }

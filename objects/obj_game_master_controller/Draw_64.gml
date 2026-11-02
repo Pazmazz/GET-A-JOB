@@ -18,7 +18,9 @@ if (!global.debug){
 	draw_text(190, 100, string((global.boss_anger / max_boss_meter) * 100) + "%");
 
 	draw_set_colour(c_blue);
-	draw_text(20, 130, "Time Remaining: " + _timer_string);
+	draw_text(1000, 30, "Time Remaining: " + _timer_string);
+	
+	draw_text(1000, 50, "Round " + string(global.round_count));
 	
 	draw_set_colour(c_white);
 }
