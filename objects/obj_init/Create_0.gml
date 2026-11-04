@@ -3,3 +3,4 @@ init_macros();
 init_config();
 init_globals();
 init_round_count();
+init_boss_meter();

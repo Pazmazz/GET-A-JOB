@@ -67,14 +67,31 @@ if (stay_loaded){
 
 // Random chance to spawn a customer if the chunk is loaded in
 if (loaded && can_spawn_customer){
-	var chance = random(1);
+	// Base 10% chance, goes up +2% per round, caps at 50%
+	var base_chance = 0.10;
+	var per_round_bonus = 0.02;
+	var max_chance = 0.50;
 	
-	// 10% chance for a customer to spawn in
-	if (chance > 0.9){
-		var customer = spawn_customer_in_chunk();
-		instance_create_layer(origin_x, origin_y, "Entity", customer);
-		log("[Game Master] Customer is spawned");
+	// Flat 10% chance on round 1, starts scaling after that
+	if (global.round_count <= 1){
+		var spawn_chance = base_chance;
+		
+		if (random(1) < spawn_chance){
+			var customer = spawn_customer_in_chunk();
+			instance_create_layer(origin_x, origin_y, "Entity", customer);
+			log("[Game Master] Customer spawned (with a chance of : " + string(spawn_chance * 100) + "%)");
+		}
+	} else {
+		var spawn_chance = min(base_chance + (global.round_count * per_round_bonus), max_chance);
+		
+		if (random(1) < spawn_chance){
+			var customer = spawn_customer_in_chunk();
+			instance_create_layer(origin_x, origin_y, "Entity", customer);
+			log("[Game Master] Customer spawned (with a chance of : " + string(spawn_chance * 100) + "%)");
+		}
 	}
+	
+	
 	
 	can_spawn_customer = false;
 }

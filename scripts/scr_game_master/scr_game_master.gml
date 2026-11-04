@@ -21,3 +21,7 @@ function init_round_count(){
 	global.round_count = 0;
 }
 
+function show_damage_number(_num, _color, _target){
+	instance_create_depth(_target.x, _target.y, _target.depth-1, obj_damage_number, {color: _color, text: _num});
+}
+

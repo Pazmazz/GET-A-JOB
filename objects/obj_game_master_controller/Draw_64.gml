@@ -17,6 +17,7 @@ if (!global.debug){
 	draw_healthbar(20, 100, 180, 120, (global.boss_anger / max_boss_meter) * 100, c_black, c_red, c_red, 0, true, true);
 	draw_text(190, 100, string((global.boss_anger / max_boss_meter) * 100) + "%");
 
+	// Draws the timer and round count
 	draw_set_colour(c_blue);
 	draw_text(1000, 30, "Time Remaining: " + _timer_string);
 	
