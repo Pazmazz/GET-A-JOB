@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Game Over Screens",
+    "path":"folders/Sprites/Game Over Screens.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

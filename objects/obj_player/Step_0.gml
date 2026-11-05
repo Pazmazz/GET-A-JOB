@@ -65,14 +65,17 @@ if (INTERACT_KEY && inst != noone){
 
 // Dismount all carts you are currently carrying
 if (DISMOUNT_KEY && cart_stack_num > 0){
-	for (var i = 0; i < cart_stack_num; i++){
-		var old_inst = global.cart_stack[i];
-		var new_inst = instance_create_layer(old_inst.x, old_inst.y, "Carts", obj_map_cart);
-		with (old_inst){
-			attached = false;
-			instance_deactivate_object(id);
-			log("[Cart] Cart despawned");
+	if (global.can_dismount){
+		for (var i = 0; i < cart_stack_num; i++){
+			var old_inst = global.cart_stack[i];
+
+			var new_inst = instance_create_layer(old_inst.x, old_inst.y, "Carts", obj_map_cart);
+			with (old_inst){
+				attached = false;
+				instance_deactivate_object(id);
+				log("[Cart] Cart despawned");
+			}
 		}
+		array_delete(global.cart_stack, 0, 5);
 	}
-	array_delete(global.cart_stack, 0, 5);
 }

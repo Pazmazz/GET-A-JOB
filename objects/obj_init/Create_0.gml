@@ -6,3 +6,6 @@ dialogue_loader();
 init_boss_meter();
 
 
+init_globals();
+init_round_count();
+init_boss_meter();

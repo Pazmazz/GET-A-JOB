@@ -18,7 +18,6 @@ function get_distance_from_spawn(orig_x, orig_y){
 	var spawn_corrds_vector = get_spawn_pos();
 	
 	var dist = point_distance(orig_x, orig_y, spawn_corrds_vector[0], spawn_corrds_vector[1]); 
-	//show_debug_message("[Calculations] Distance: " + string(dist));
 	return dist;
 }
 
@@ -30,7 +29,7 @@ function get_distance_from_spawn(orig_x, orig_y){
 function assign_chunk_weight(orig_x, orig_y){
 	var dist = get_distance_from_spawn(orig_x, orig_y);
 	var n_chunks = 2; // Amount of chunks to half the weight at
-	var k = 0.693 / (512 * n_chunks); 
+	var k = 0.693 / (512 * n_chunks); // A chunk is 512x512 pixels (or 8x8 blocks)
 	var weight = exp(make_negative(k) * dist); // Use exponential decay to assign weights
 	return weight;
 }

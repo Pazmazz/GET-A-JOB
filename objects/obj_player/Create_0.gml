@@ -1,7 +1,7 @@
 object_tag = PLAYER;
 
 // Base movement speed 
-base_speed = 6;
+base_speed = 10;
 current_speed = 0;
 
 // Variables for tracking average speed

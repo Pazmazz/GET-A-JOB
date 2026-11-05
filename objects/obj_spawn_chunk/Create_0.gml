@@ -10,4 +10,4 @@ instance_create_layer(spawn_x, spawn_y, "Player", obj_player);
 log("[MapGen] Player spawned at positiion " + string(obj_player.x) + ", " + string(obj_player.y));
 
 // Create spawn marker at the center of the chunk for distance calculations
-instance_create_layer(spawn_x, spawn_y, "Utility", obj_spawn_marker);
+instance_create_layer(spawn_x, spawn_y, "Chunks", obj_spawn_marker);
