@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_json_reader",
+  "%Name":"scr_get_boss_questions",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_json_reader",
+  "name":"scr_get_boss_questions",
   "parent":{
     "name":"Dialogue",
     "path":"folders/Scripts/Dialogue.yy",

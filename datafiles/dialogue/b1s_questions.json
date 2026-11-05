@@ -1,0 +1,65 @@
+
+{
+    "b1s_question1": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Why do you want this job, seriously?"
+        },
+        {
+            "type": "choice",
+            "content": "Choose your answer.",
+            "options": [
+                {
+                    "content": "I want to work hard, seriously.",
+                    "topic": "b1s_good_answer",
+                    "sscore": "good"
+                },
+                                {
+                    "content": "I want to work neutrally.",
+                    "topic": "b1s_neutral_answer",
+                    "sscore": "neutral"
+                },
+                {
+                    "content": "The shopping carts summoned me, forreal foreal.",
+                    "topic": "b1s_bad_answer",
+                    "sscore": "bad"
+                }
+            ]
+        }
+    ],
+
+    "b1s_bad_answer": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Wow, you're stupid, seriosly."
+        }
+    ],
+     "b1g_neutral_answer": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Hmm, how neutral."
+        }
+    ],
+    "b1s_good_answer": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Neehee, how smart, seriosly."
+        }
+    ]
+}

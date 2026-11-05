@@ -65,9 +65,10 @@ function ChoiceAction(_text) : DialogueAction() constructor {
 }
 
 // Place options within the ChoiceAction
-function OptionAction(_text, _topic): DialogueAction() constructor {
+function OptionAction(_text, _topic, _score): DialogueAction() constructor {
 	text = _text;
 	topic = _topic;
+	sscore = _score;
 
 	act = function(textbox) {
 		textbox.set_topic(topic);

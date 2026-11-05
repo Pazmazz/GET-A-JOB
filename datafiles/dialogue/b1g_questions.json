@@ -1,0 +1,395 @@
+
+{
+    "b1g_question_1": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Why do you want this job? huh huhuhuhuhuhuhuhhuhuhuh? ANSWER ANSWER ANSWER!!!!!!!!!!!!!!!!!"
+        },
+        {
+            "type": "choice",
+            "content": "Choose your answer.",
+            "options": [
+                {
+                    "content": "I want to work hard.",
+                    "topic": "good_answer_1_b1g",
+                    "sscore": "good"
+                },
+                {
+                    "content": "I want to work neutrally.",
+                    "topic": "neutral_answer_1_b1g",
+                    "sscore": "neutral"
+                },
+                {
+                    "content": "The shopping carts summoned me.",
+                    "topic": "bad_answer_1_b1g",
+                    "sscore": "bad"
+                }
+            ]
+        }
+    ],
+    "bad_answer_1_b1g": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Wow, you're stupid."
+        }
+    ],
+    "neutral_answer_1_b1g": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Hmm, how neutral CAN YOU SEE ME ."
+        }
+    ],
+    "good_answer_1_b1g": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Neehee, how smart."
+        }
+    ],
+
+    "Section_break_1": [
+
+    ],
+
+    "b1g_question_2": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Onto the next one..."
+        },
+        {
+            "type": "choice",
+            "content": "So uhh, what do you do for fun?",
+            "options": [
+                {
+                    "content": "Gardening",
+                    "topic": "good_answer_2_b1g",
+                    "sscore": "good"
+                },
+                {
+                    "content": "Catching Z's on the mattress",
+                    "topic": "neutral_answer_2_b1g",
+                    "sscore": "neutral"
+                },
+                {
+                    "content": "Watching corn grow.",
+                    "topic": "bad_answer_2_b1g",
+                    "sscore": "bad"
+                }
+            ]
+        }
+    ],
+
+    "bad_answer_2_b1g": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "I see. I'm pickin' up what you're puttin' down. Then, I'm puttin' it back down 'cause frankly, ya should've kept that one to yourself"
+        }
+    ],
+    "neutral_answer_2_b1g": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "That's a fun way of sayin' ya sleep all day. I respect that honesty though. (So do I)"
+        }
+    ],
+    "good_answer_2_b1g": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "A green thumb, huh? I know a lot about that 'green' myself. But you'll have to ask me more about that off the clock *wink*"
+        }
+    ],
+
+    "Section_break_2": [
+
+    ],
+
+    "b1g_question_3": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "How'd ya find out about this job?"
+        },
+        {
+            "type": "choice",
+            "content": "Choose your answer.",
+            "options": [
+                {
+                    "content": "Word on the street.",
+                    "topic": "good_answer_3_b1g",
+                    "sscore": "good"
+                },
+                {
+                    "content": "I walked in here by accident.",
+                    "topic": "neutral_answer_3_b1g",
+                    "sscore": "neutral"
+                },
+                {
+                    "content": "I shop here all the time.",
+                    "topic": "bad_answer_3_b1g",
+                    "sscore": "bad"
+                }
+            ]
+        }
+    ],
+
+    "bad_answer_3_b1g": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "That's very interestin', 'cause we haven't even opened yet. So either you just admitted to breakin' and enterin', or, you're just lyin' *wink*"
+        }
+    ],
+    "neutral_answer_3_b1g": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Ya know what, I know the feeling. I also walked into my first interview by accident too… It didn't work out too well for me though"
+        }
+    ],
+    "good_answer_3_b1g": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "That's what's up! Ya gotta be in the know about this kind of stuff ya know? And I'm glad you're in the know to know, you know?"
+        }
+    ],
+
+      "Section_break_3": [
+
+    ],
+
+    "b1g_question_4": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Uhm just answer okay?"
+        },
+        {
+            "type": "choice",
+            "content": "Choose your answer.",
+            "options": [
+                {
+                    "content": "I want to work hard.",
+                    "topic": "good_answer_4_b1g",
+                    "sscore": "good"
+                },
+                {
+                    "content": "I want to work neutrally.",
+                    "topic": "neutral_answer_4_b1g",
+                    "sscore": "neutral"
+                },
+                {
+                    "content": "The shopping carts summoned me.",
+                    "topic": "bad_answer_4_b1g",
+                    "sscore": "bad"
+                }
+            ]
+        }
+    ],
+
+    "bad_answer_4_b1g": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Wow, you're stupid."
+        }
+    ],
+    "neutral_answer_4_b1g": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Hmm, how neutral."
+        }
+    ],
+    "good_answer_4_b1g": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Neehee, how smart."
+        }
+    ],
+
+      "Section_break_4": [
+
+    ],
+
+    "b1g_question_5": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Can you answer this is question 5 btw?"
+        },
+        {
+            "type": "choice",
+            "content": "Choose your answer.",
+            "options": [
+                {
+                    "content": "I want to work hard.",
+                    "topic": "good_answer_5_b1g",
+                    "sscore": "good"
+                },
+                {
+                    "content": "I want to work neutrally.",
+                    "topic": "neutral_answer_5_b1g",
+                    "sscore": "neutral"
+                },
+                {
+                    "content": "The shopping carts summoned me.",
+                    "topic": "bad_answer_5_b1g",
+                    "sscore": "bad"
+                }
+            ]
+        }
+    ],
+
+    "bad_answer_5_b1g": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Wow, you're stupid."
+        }
+    ],
+    "neutral_answer_5_b1g": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Hmm, how neutral."
+        }
+    ],
+    "good_answer_5_b1g": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Neehee, how smart."
+        }
+    ],
+
+    "b1g_question_6": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Can you answer this is question 6 btw?"
+        },
+        {
+            "type": "choice",
+            "content": "Choose your answer.",
+            "options": [
+                {
+                    "content": "I want to work hard.",
+                    "topic": "good_answer_6_b1g",
+                    "sscore": "good"
+                },
+                {
+                    "content": "I want to work neutrally.",
+                    "topic": "neutral_answer_6_b1g",
+                    "sscore": "neutral"
+                },
+                {
+                    "content": "The shopping carts summoned me.",
+                    "topic": "bad_answer_6_b1g",
+                    "sscore": "bad"
+                }
+            ]
+        }
+    ],
+
+    "bad_answer_6_b1g": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Wow, you're stupid."
+        }
+    ],
+    "neutral_answer_6_b1g": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Hmm, how neutral."
+        }
+    ],
+    "good_answer_6_b1g": [
+        {
+            "type": "speaker",
+            "name": "Laid-Back Boss"
+        },
+        {
+            "type": "text",
+            "content": "Neehee, how smart."
+        }
+    ]
+}

@@ -1,5 +1,12 @@
 var confirm = keyboard_check_pressed(confirm_key);
 
+//Setting animations
+// Animate selected option
+option_selection_float = sin(current_time * option_float_speed) * option_float_height;
+
+// Animate glow
+option_glow = (sin(current_time * option_glow_speed) + 1) / 2;
+
 //Tells how far you've gotten in reading line of text
 text_progress = min(text_progress + text_speed, text_length);
 
@@ -32,6 +39,12 @@ if (text_progress == text_length){
 		// Select an option
 		if (confirm) {
 			var option = options[current_option];
+			
+			//Record the answer score
+			 if (instance_exists(obj_interview_controller)) {
+				 obj_interview_controller.record_answer(option.sscore);
+			 }
+			 
 			options = [];
 			option_count = 0;
 			

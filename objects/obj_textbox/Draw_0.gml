@@ -1,14 +1,24 @@
-// Draws the textbox
-textbox_x = camera_get_view_x(view_camera[0])+ 30;
-textbox_y = camera_get_view_y(view_camera[0]) + 140;
+//Draws speaker box 
+var speaker_x_tb = camera_get_view_x(view_camera[0])+ 160;
+var speaker_y_tb = camera_get_view_y(view_camera[0]) + 400;
 
-draw_sprite_stretched(sprite_index, 0, textbox_x, textbox_y, textbox_width, textbox_height);
+draw_sprite_stretched(spr_menu, 0, speaker_x_tb, speaker_y_tb, speaker_width_tb, speaker_height_tb);
+
+// Draws the textbox
+textbox_x = camera_get_view_x(view_camera[0])+ 160;
+textbox_y = camera_get_view_y(view_camera[0]) + 464;
+
+draw_sprite_stretched(spr_menu, 0, textbox_x, textbox_y, textbox_width, textbox_height);
+
+//draw_sprite(sprite_index, 0, speaker_x_tb, speaker_y_tb);
 
 //Is the textbox drawn
 textbox_visible = true;
 
 var draw_text_x = textbox_x;
 var draw_text_y = textbox_y;
+var draw_text_speaker_x = speaker_x_tb;
+var draw_text_speaker_y = speaker_y_tb;
 var textbox = obj_textbox;
 var finished = text_progress == text_length;
 
@@ -39,11 +49,11 @@ var finished = text_progress == text_length;
 
 // Speaker
 if (speaker_name != ""){
-	draw_text_y += padding - 5;
+	draw_text_speaker_y += padding - 5;
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_top);
 	draw_set_font(TEXT_FONT);
-	draw_set_color(TEXT_COLOR);
+	draw_set_color(TEXT_SELECT_COLOR);
 	draw_text(speaker_x, speaker_y, speaker_name);
 }
 
@@ -57,18 +67,32 @@ type(draw_text_x + text_x, draw_text_y + text_y, text, text_progress, text_width
 // Options
 if (finished && option_count > 0) {
 	draw_set_valign(fa_middle);
-	draw_set_color(TEXT_SELECT_COLOR);
+	draw_set_color(TEXT_COLOR);
 	for (var i = 0; i < option_count; i++) {
-		var opt_x = x + option_x;
-		var opt_y = y + option_y - (option_count - i - 1) * option_spacing;
+		var opt_x = option_x;
+		var opt_y = option_y - (option_count - i - 1) * option_spacing;
 		
-		// Selected option has an arrow beside it
-		//if (i == current_option) {
-		//	opt_x += option_selection_indent;
-		//	draw_sprite(spr_arrow, 0, opt_x, opt_y);
-		//}
+		// Selected option animation
+		if (i == current_option) {
+
+		    opt_y -= option_selection_float;
+
+		    // Glow effect
+		    var glow_alpha = 0.15 + (option_glow * 0.45);
+
+		    draw_set_alpha(glow_alpha);
+		    draw_set_color(TEXT_SELECT_COLOR);
+
+		    // Draw slightly larger background behind option
+		    draw_sprite_stretched(spr_option, 0, opt_x - 5, opt_y - option_height / 2 - 5, option_width + 10, option_height + 10);
+
+		    // Reset drawing settings
+		    draw_set_alpha(1);
+		    draw_set_color(TEXT_COLOR);
+		}
 		
-		draw_sprite_stretched(spr_option, 0, opt_x, opt_y - option_height / 2, option_width, option_height);
+		draw_sprite_stretched(spr_menu, 0, opt_x, opt_y - option_height / 2, option_width, option_height);
 		draw_text(opt_x + option_text_x, opt_y, options[i].text);
 	}
 }
+

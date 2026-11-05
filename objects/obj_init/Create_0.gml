@@ -1,3 +1,4 @@
 init_macros();
 init_config();
-scr_dialogue_loader();
+dialogue_loader();
+global.interview_controller = noone;
