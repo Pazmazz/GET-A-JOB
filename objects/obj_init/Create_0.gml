@@ -1,4 +1,8 @@
 init_macros();
 init_config();
 dialogue_loader();
-global.interview_controller = noone;
+//init_globals();
+//init_round_count();
+init_boss_meter();
+
+
