@@ -6,7 +6,9 @@ function dialogue_loader(){
 	json_reader("dialogue/words.json");
 	json_reader("dialogue/b1g_questions.json");
 	json_reader("dialogue/b1s_questions.json");
-
+	//json_reader("dialogue/customers/anxious_customer.json");
+	//json_reader("dialogue/customers/direct_customer.json");
+	//json_reader("dialogue/customers/normal_customer.json");
 }
 
 function json_reader(_path){

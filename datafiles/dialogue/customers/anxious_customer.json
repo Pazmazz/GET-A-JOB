@@ -1,0 +1,196 @@
+{
+    "ac_question_1": [
+        {
+            "type": "speaker",
+            "name": "Anxious Customer"
+        }, 
+
+        {
+            "type": "choice",
+            "content": "W-would you happen to know w-where the canned sodas are...?",
+            "options": [
+                {
+                    "content": "In the back aisle.",
+                    "topic": "ac_q1_answer_1",
+                    "happiness": "accept"
+                },
+                {
+                    "content": "In the store.",
+                    "topic": "ac_q1_answer_2",
+                    "happiness": "accept"
+                },
+                {
+                    "content": "Under the sink.",
+                    "topic": "ac_q1_answer_3",
+                    "happiness": "reject"
+                }
+            ]
+        }
+    ],
+
+    "ac_q1_answer_1": [
+        {
+            "type": "speaker",
+            "name": "Anxious Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "Oh- thank you!"
+        }
+    ],
+
+    "ac_q1_answer_2": [
+        {
+            "type": "speaker",
+            "name": "Anxious Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "Umm... ok... t-thank you!"
+        }
+    ],
+
+    "ac_q1_answer_3": [
+        {
+            "type": "speaker",
+            "name": "Anxious Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "Oh o-ok! (That doesn't sound quite right)"
+        }
+    ],
+
+    "ac_question_2": [
+        {
+            "type": "speaker",
+            "name": "Anxious Customer"
+        }, 
+
+        {
+            "type": "choice",
+            "content": "A-a-are you guys... h-hiring?",
+            "options": [
+                {
+                    "content": "After I'm fired, yes.",
+                    "topic": "ac_q2_answer_1",
+                    "happiness": "accept"
+                },
+                {
+                    "content": "Maybe so, maybe not.",
+                    "topic": "ac_q2_answer_2",
+                    "happiness": "accept"
+                },
+                {
+                    "content": "Not if you can't form a full sentence.",
+                    "topic": "ac_q2_answer_3",
+                    "happiness": "reject"
+                }
+            ]
+        }
+    ],
+
+    "ac_q2_answer_1": [
+        {
+            "type": "speaker",
+            "name": "Anxious Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "Oh ok... maybe don't do that though..."
+        }
+    ],
+
+    "ac_q2_answer_2": [
+        {
+            "type": "speaker",
+            "name": "Anxious Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "Oh ok... I'll ask the manager then..."
+        }
+    ],
+
+    "ac_q2_answer_3": [
+        {
+            "type": "speaker",
+            "name": "Anxious Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "O-oh no! I'm s-s-sorry! (So scary...)"
+        }
+    ],
+
+    "ac_question_3": [
+        {
+            "type": "speaker",
+            "name": "Anxious Customer"
+        }, 
+
+        {
+            "type": "choice",
+            "content": "Ca-can I ask you a q-question...?",
+            "options": [
+                {
+                    "content": "Yes...?",
+                    "topic": "ac_q3_answer_1",
+                    "happiness": "accept"
+                },
+                {
+                    "content": "You just did.",
+                    "topic": "ac_q3_answer_2",
+                    "happiness": "accept"
+                },
+                {
+                    "content": "Can you?",
+                    "topic": "ac_q3_answer_3",
+                    "happiness": "reject"
+                }
+            ]
+        }
+    ],
+
+    "ac_q3_answer_1": [
+        {
+            "type": "speaker",
+            "name": "Anxious Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "O-oh thank you! (Wait, I think I messed up this interaction somehow.)"
+        }
+    ],
+
+    "ac_q3_answer_2": [
+        {
+            "type": "speaker",
+            "name": "Anxious Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "O-oh, I did, didn't I haha... (This is so embarrassing)"
+        }
+    ],
+
+    "ac_q3_answer_3": [
+        {
+            "type": "speaker",
+            "name": "Anxious Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "Oh? O-ok? (That doesn't sound quite right? Why am I still asking questions?)"
+        }
+    ]
+}

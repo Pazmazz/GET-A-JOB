@@ -12,6 +12,6 @@ if (global.debug){
 	draw_text(10, 130, "Player movement speed: " + string(obj_player.average_speed * ROOM_SPEED));
 	draw_text(10, 145, "Camera Position (X, Y): " + string(camera_get_view_x(view_camera[0])) + ", " + + string(camera_get_view_y(view_camera[0])));
 	
-	draw_text(900, 10, "FPS: " + string(fps_real));
+	draw_text(900, 10, "FPS: " + string(fps));
 	draw_text(900, 25, "Instances: " + string(instance_number(all)));
 }

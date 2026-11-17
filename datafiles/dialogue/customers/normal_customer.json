@@ -1,0 +1,199 @@
+{
+    "nc_question_1": [
+        {
+            "type": "speaker",
+            "name": "Normal Customer"
+        },
+
+        {
+            "type": "choice",
+            "content": "Does this store cash checks?",
+            "options": [
+                {
+                    "content": "Inside at the cash register.",
+                    "topic": "nc_q1_answer_1",
+                    "happiness": "accept"
+                },
+                {
+                    "content": "Give me the money.",
+                    "topic": "nc_q1_answer_2",
+                    "happiness": "reject"
+                },
+                {
+                    "content": "Wouldn't you like to know, cash boy?",
+                    "topic": "nc_q1_answer_3",
+                    "happiness": "reject"
+                }
+            ]
+        }
+    ],
+
+    "nc_q1_answer_1": [
+        {
+            "type": "speaker",
+            "name": "Normal Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "Ok, thank you very much."
+        }
+    ],
+
+    "nc_q1_answer_2": [
+        {
+            "type": "speaker",
+            "name": "Normal Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "Wait what? That can't be right."
+        }
+    ],
+
+    
+    "nc_q1_answer_3": [
+        {
+            "type": "speaker",
+            "name": "Normal Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "Wait what? Who do you think you are?"
+        }
+    ],
+
+    "nc_question_2": [
+        {
+            "type": "speaker",
+            "name": "Normal Customer"
+        },
+
+        {
+            "type": "choice",
+            "content": "Is the fresh produce here actually fresh?",
+            "options": [
+                {
+                    "content": "We grow them ourselves.",
+                    "topic": "nc_q2_answer_1",
+                    "happiness": "accept"
+                },
+                {
+                    "content": "Buy it and find out ;)",
+                    "topic": "nc_q2_answer_2",
+                    "happiness": "accept"
+                },
+                {
+                    "content": "We reuse it.",
+                    "topic": "nc_q2_answer_3",
+                    "happiness": "reject"
+                }
+            ]
+        }
+    ],
+
+    "nc_q2_answer_1": [
+        {
+            "type": "speaker",
+            "name": "Normal Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "Ok, thank you very much."
+        }
+    ],
+
+    "nc_q2_answer_2": [
+        {
+            "type": "speaker",
+            "name": "Normal Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "Ok, thank you very much... I guess."
+        }
+    ],
+
+    
+    "nc_q2_answer_3": [
+        {
+            "type": "speaker",
+            "name": "Normal Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "Wait what? That can't be right."
+        }
+    ],
+
+    "nc_question_3": [
+        {
+            "type": "speaker",
+            "name": "Normal Customer"
+        },
+
+        {
+            "type": "choice",
+            "content": "Where are the canned sodas?",
+            "options": [
+                {
+                    "content": "On the canned sodas aisle.",
+                    "topic": "nc_q3_answer_1",
+                    "happiness": "accept"
+                },
+                {
+                    "content": "On the canned canned sodas.",
+                    "topic": "nc_q3_answer_2",
+                    "happiness": "reject"
+                },
+                {
+                    "content": "I drank them all.",
+                    "topic": "nc_q3_answer_3",
+                    "happiness": "reject"
+                }
+            ]
+        }
+    ],
+
+    "nc_q3_answer_1": [
+        {
+            "type": "speaker",
+            "name": "Normal Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "Ok, thank you very much."
+        }
+    ],
+
+    "nc_q3_answer_2": [
+        {
+            "type": "speaker",
+            "name": "Normal Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "Canned sodas inside of canned sodas?"
+        }
+    ],
+
+    
+    "nc_q3_answer_3": [
+        {
+            "type": "speaker",
+            "name": "Normal Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "Wait what? That can't be right."
+        }
+    ]
+}

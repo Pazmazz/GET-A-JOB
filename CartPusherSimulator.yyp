@@ -62,12 +62,15 @@
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"b1g_questions.json","CopyToMask":-1,"filePath":"datafiles/dialogue","name":"b1g_questions.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"b1s_questions.json","CopyToMask":-1,"filePath":"datafiles/dialogue","name":"b1s_questions.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"anxious_customer.json","CopyToMask":-1,"filePath":"datafiles/dialogue/Customers","name":"anxious_customer.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"direct_customer.json","CopyToMask":-1,"filePath":"datafiles/dialogue/Customers","name":"direct_customer.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"normal_customer.json","CopyToMask":-1,"filePath":"datafiles/dialogue/Customers","name":"normal_customer.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"words.json","CopyToMask":-1,"filePath":"datafiles/dialogue","name":"words.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"CartPusherSimulator",
   "resources":[
@@ -184,8 +187,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
-    {"roomId":{"name":"rm_boss_test","path":"rooms/rm_boss_test/rm_boss_test.yy",},},
     {"roomId":{"name":"rm_mapgen_test2","path":"rooms/rm_mapgen_test2/rm_mapgen_test2.yy",},},
+    {"roomId":{"name":"rm_boss_test","path":"rooms/rm_boss_test/rm_boss_test.yy",},},
     {"roomId":{"name":"rm_strange","path":"rooms/rm_strange/rm_strange.yy",},},
     {"roomId":{"name":"rm_customer_test","path":"rooms/rm_customer_test/rm_customer_test.yy",},},
     {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},

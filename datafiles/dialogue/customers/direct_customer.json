@@ -1,0 +1,196 @@
+{
+    "dc_question_1": [
+        {
+            "type": "speaker",
+            "name": "Direct Customer"
+        },
+
+        {
+            "type": "choice",
+            "content": "Tell me where your bathrooms are!",
+            "options": [
+                {
+                    "content": "Beside the registers.",
+                    "topic": "dc_q1_answer_1",
+                    "happiness": "accept"
+                },
+                {
+                    "content": "In that guy's car.",
+                    "topic": "dc_q1_answer_2",
+                    "happiness": "reject"
+                },
+                {
+                    "content": "We don't have one.",
+                    "topic": "dc_q1_answer_3",
+                    "happiness": "reject"
+                }
+            ]
+        }
+    ],
+
+    "dc_q1_answer_1": [
+        {
+            "type": "speaker",
+            "name": "Direct Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "Hmph! That'll suffice."
+        }
+    ],
+
+    "dc_q1_answer_2": [
+        {
+            "type": "speaker",
+            "name": "Direct Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "...and just what does THAT mean? Are you genuinely that incompetent?"
+        }
+    ],
+
+    "dc_q1_answer_3": [
+        {
+            "type": "speaker",
+            "name": "Direct Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "...and just what does THAT mean? Are you genuinely that incompetent?"
+        }
+    ],
+
+    "dc_question_2": [
+        {
+            "type": "speaker",
+            "name": "Direct Customer"
+        },
+
+        {
+            "type": "choice",
+            "content": "My five year old was running around here, have you seen him?",
+            "options": [
+                {
+                    "content": "No...?",
+                    "topic": "dc_q2_answer_1",
+                    "happiness": "accept"
+                },
+                {
+                    "content": "I sent him to catch-em-all!",
+                    "topic": "dc_q2_answer_2",
+                    "happiness": "reject"
+                },
+                {
+                    "content": "No!",
+                    "topic": "dc_q2_answer_3",
+                    "happiness": "reject"
+                }
+            ]
+        }
+    ],
+
+    "dc_q2_answer_1": [
+        {
+            "type": "speaker",
+            "name": "Direct Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "Hmph! That'll suffice."
+        }
+    ],
+
+    "dc_q2_answer_2": [
+        {
+            "type": "speaker",
+            "name": "Direct Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "...and just what does THAT mean? Are you genuinely that incompetent?"
+        }
+    ],
+
+    "dc_q2_answer_3": [
+        {
+            "type": "speaker",
+            "name": "Direct Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "...and just what does THAT mean? Are you genuinely that incompetent?"
+        }
+    ],
+
+    "dc_question_3": [
+        {
+            "type": "speaker",
+            "name": "Direct Customer"
+        },
+
+        {
+            "type": "choice",
+            "content": "Where is your manager? I need to speak to them!",
+            "options": [
+                {
+                    "content": "They're not here.",
+                    "topic": "dc_q3_answer_1",
+                    "happiness": "accept"
+                },
+                {
+                    "content": "They're on top of my screen.",
+                    "topic": "dc_q3_answer_2",
+                    "happiness": "reject"
+                },
+                {
+                    "content": "Nah, I'm cool.",
+                    "topic": "dc_q3_answer_3",
+                    "happiness": "reject"
+                }
+            ]
+        }
+    ],
+
+    "dc_q3_answer_1": [
+        {
+            "type": "speaker",
+            "name": "Direct Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "Hmph! That'll suffice."
+        }
+    ],
+
+    "dc_q3_answer_2": [
+        {
+            "type": "speaker",
+            "name": "Direct Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "...and just what does THAT mean? Are you genuinely that incompetent?"
+        }
+    ],
+
+    "dc_q3_answer_3": [
+        {
+            "type": "speaker",
+            "name": "Direct Customer"
+        },
+
+        {
+            "type": "text",
+            "content": "...and just what does THAT mean? Are you genuinely that incompetent?"
+        }
+    ]
+}
