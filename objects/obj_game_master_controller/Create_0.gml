@@ -24,7 +24,7 @@ if (global.round_count < 5){
 	// 3 minute timer for rounds 5-9
 	timer_seconds = 180; 
 } else {
-	// 3:30 minute timer for rounds 10 and beyond
+	// 2:30 minute timer for rounds 10 and beyond
 	timer_seconds = 150; 
 }
 alarm[0] = ROOM_SPEED; // Begin timer

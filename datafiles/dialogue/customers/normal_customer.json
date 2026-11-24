@@ -1,4 +1,28 @@
 {
+    "nc_init" : [
+        {
+            "type": "speaker",
+            "name": "Normal Customer"
+        },
+
+        {
+            "type": "choice",
+            "content": "Excuse me! I have a question.",
+            "options": [
+                {
+                    "content": "Hear them out.",
+                    "topic": "nc_empty",
+                    "sscore": "hear"
+                },
+                {
+                    "content": "Ignore.",
+                    "topic": "nc_empty",
+                    "sscore": "ignore"
+                }
+            ]
+        }
+    ],
+    
     "nc_question_1": [
         {
             "type": "speaker",
@@ -12,17 +36,17 @@
                 {
                     "content": "Inside at the cash register.",
                     "topic": "nc_q1_answer_1",
-                    "happiness": "accept"
+                    "sscore": "accept"
                 },
                 {
                     "content": "Give me the money.",
                     "topic": "nc_q1_answer_2",
-                    "happiness": "reject"
+                    "sscore": "reject"
                 },
                 {
                     "content": "Wouldn't you like to know, cash boy?",
                     "topic": "nc_q1_answer_3",
-                    "happiness": "reject"
+                    "sscore": "reject"
                 }
             ]
         }
@@ -78,17 +102,17 @@
                 {
                     "content": "We grow them ourselves.",
                     "topic": "nc_q2_answer_1",
-                    "happiness": "accept"
+                    "sscore": "accept"
                 },
                 {
                     "content": "Buy it and find out ;)",
                     "topic": "nc_q2_answer_2",
-                    "happiness": "accept"
+                    "sscore": "accept"
                 },
                 {
                     "content": "We reuse it.",
                     "topic": "nc_q2_answer_3",
-                    "happiness": "reject"
+                    "sscore": "reject"
                 }
             ]
         }
@@ -144,17 +168,17 @@
                 {
                     "content": "On the canned sodas aisle.",
                     "topic": "nc_q3_answer_1",
-                    "happiness": "accept"
+                    "sscore": "accept"
                 },
                 {
                     "content": "On the canned canned sodas.",
                     "topic": "nc_q3_answer_2",
-                    "happiness": "reject"
+                    "sscore": "reject"
                 },
                 {
                     "content": "I drank them all.",
                     "topic": "nc_q3_answer_3",
-                    "happiness": "reject"
+                    "sscore": "reject"
                 }
             ]
         }
@@ -195,5 +219,9 @@
             "type": "text",
             "content": "Wait what? That can't be right."
         }
+    ],
+
+    "nc_empty": [
+
     ]
 }

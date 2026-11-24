@@ -1,4 +1,28 @@
 {
+    "ac_init" : [
+        {
+            "type": "speaker",
+            "name": "Anxious Customer"
+        },
+
+        {
+            "type": "choice",
+            "content": "U-um, excuse me, I have a question...",
+            "options": [
+                {
+                    "content": "Hear them out.",
+                    "topic": "ac_empty",
+                    "sscore": "hear"
+                },
+                {
+                    "content": "Ignore.",
+                    "topic": "ac_empty",
+                    "sscore": "ignore"
+                }
+            ]
+        }
+    ],
+    
     "ac_question_1": [
         {
             "type": "speaker",
@@ -12,17 +36,17 @@
                 {
                     "content": "In the back aisle.",
                     "topic": "ac_q1_answer_1",
-                    "happiness": "accept"
+                    "sscore": "accept"
                 },
                 {
                     "content": "In the store.",
                     "topic": "ac_q1_answer_2",
-                    "happiness": "accept"
+                    "sscore": "accept"
                 },
                 {
                     "content": "Under the sink.",
                     "topic": "ac_q1_answer_3",
-                    "happiness": "reject"
+                    "sscore": "reject"
                 }
             ]
         }
@@ -77,17 +101,17 @@
                 {
                     "content": "After I'm fired, yes.",
                     "topic": "ac_q2_answer_1",
-                    "happiness": "accept"
+                    "sscore": "accept"
                 },
                 {
                     "content": "Maybe so, maybe not.",
                     "topic": "ac_q2_answer_2",
-                    "happiness": "accept"
+                    "sscore": "accept"
                 },
                 {
                     "content": "Not if you can't form a full sentence.",
                     "topic": "ac_q2_answer_3",
-                    "happiness": "reject"
+                    "sscore": "reject"
                 }
             ]
         }
@@ -142,17 +166,17 @@
                 {
                     "content": "Yes...?",
                     "topic": "ac_q3_answer_1",
-                    "happiness": "accept"
+                    "sscore": "accept"
                 },
                 {
                     "content": "You just did.",
                     "topic": "ac_q3_answer_2",
-                    "happiness": "accept"
+                    "sscore": "accept"
                 },
                 {
                     "content": "Can you?",
                     "topic": "ac_q3_answer_3",
-                    "happiness": "reject"
+                    "sscore": "reject"
                 }
             ]
         }
@@ -192,5 +216,9 @@
             "type": "text",
             "content": "Oh? O-ok? (That doesn't sound quite right? Why am I still asking questions?)"
         }
+    ],
+
+    "ac_empty": [
+
     ]
 }

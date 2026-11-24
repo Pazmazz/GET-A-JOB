@@ -1,4 +1,28 @@
 {
+    "dc_init" : [
+        {
+            "type": "speaker",
+            "name": "Direct Customer"
+        },
+
+        {
+            "type": "choice",
+            "content": "Hey you! Come over here!",
+            "options": [
+                {
+                    "content": "Hear them out.",
+                    "topic": "dc_empty",
+                    "sscore": "hear"
+                },
+                {
+                    "content": "Ignore.",
+                    "topic": "dc_empty",
+                    "sscore": "ignore"
+                }
+            ]
+        }
+    ],
+    
     "dc_question_1": [
         {
             "type": "speaker",
@@ -12,17 +36,17 @@
                 {
                     "content": "Beside the registers.",
                     "topic": "dc_q1_answer_1",
-                    "happiness": "accept"
+                    "sscore": "accept"
                 },
                 {
                     "content": "In that guy's car.",
                     "topic": "dc_q1_answer_2",
-                    "happiness": "reject"
+                    "sscore": "reject"
                 },
                 {
                     "content": "We don't have one.",
                     "topic": "dc_q1_answer_3",
-                    "happiness": "reject"
+                    "sscore": "reject"
                 }
             ]
         }
@@ -77,17 +101,17 @@
                 {
                     "content": "No...?",
                     "topic": "dc_q2_answer_1",
-                    "happiness": "accept"
+                    "sscore": "accept"
                 },
                 {
                     "content": "I sent him to catch-em-all!",
                     "topic": "dc_q2_answer_2",
-                    "happiness": "reject"
+                    "sscore": "reject"
                 },
                 {
                     "content": "No!",
                     "topic": "dc_q2_answer_3",
-                    "happiness": "reject"
+                    "sscore": "reject"
                 }
             ]
         }
@@ -142,17 +166,17 @@
                 {
                     "content": "They're not here.",
                     "topic": "dc_q3_answer_1",
-                    "happiness": "accept"
+                    "sscore": "accept"
                 },
                 {
                     "content": "They're on top of my screen.",
                     "topic": "dc_q3_answer_2",
-                    "happiness": "reject"
+                    "sscore": "reject"
                 },
                 {
                     "content": "Nah, I'm cool.",
                     "topic": "dc_q3_answer_3",
-                    "happiness": "reject"
+                    "sscore": "reject"
                 }
             ]
         }
@@ -192,5 +216,9 @@
             "type": "text",
             "content": "...and just what does THAT mean? Are you genuinely that incompetent?"
         }
+    ],
+
+    "dc_empty": [
+
     ]
 }
