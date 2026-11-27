@@ -43,8 +43,8 @@ random_question_mode = false;
 random_question_index = 0;
 
 // Speaker
-speaker_x = 300;
-speaker_y = 405;
+speaker_x = camera_get_view_x(view_camera[0]) + 300; // Og value was 300
+speaker_y = camera_get_view_y(view_camera[0]) + 405; // Og value was 405
 
 speaker_width_tb = 275;
 speaker_height_tb = 50;
@@ -115,6 +115,16 @@ function next(){
 		//check if proceed avalibe
 		if (instance_exists(obj_interview_controller)) {
 			obj_interview_controller.can_proceed = true;
+		}
+		
+		if (instance_exists(obj_customer_controller)){
+			if (obj_customer_controller._init_phase_active) {
+		        obj_customer_controller._can_proceed = true;
+		    } else {
+		        if (obj_customer_controller._question_ended) {
+		            obj_customer_controller.finish_customer_question();
+		        }
+		    }
 		}
 		instance_destroy();
 	} 

@@ -14,3 +14,5 @@ if (global.boss_anger >= 100){
 if (global.carts_returned >= global.total_carts && initialization_over){
 	room_goto(rm_success);
 }
+
+//show_debug_message("Boss anger: " + string(global.boss_anger));

@@ -1,3 +1,5 @@
+if (global.paused) exit;
+
 // Cart stack number
 var cart_stack_num = array_length(global.cart_stack);
 
@@ -6,22 +8,25 @@ var speed_multiplier = 1 - (.10 * cart_stack_num); // Markiplier...
 speed_multiplier = max(speed_multiplier, 0);
 current_speed = base_speed * speed_multiplier;
 
-// Basic movement
-if (MOVE_LEFT)){
-	x -= current_speed; // Move to the left
-	direction = 180;
-}
-if (MOVE_RIGHT)){
-	x += current_speed; // Move to the right
-	direction = 0;
-}
-if (MOVE_UP)){
-	y -= current_speed; // Move up
-	direction = 90;
-}
-if (MOVE_DOWN)){
-	y += current_speed; // Move down
-	direction = 270;
+// Only move if moving is enabled
+if (global.canMove == true) {
+	// Basic movement
+	if (MOVE_LEFT)){
+		x -= current_speed; // Move to the left
+		direction = 180;
+	}
+	if (MOVE_RIGHT)){
+		x += current_speed; // Move to the right
+		direction = 0;
+	}
+	if (MOVE_UP)){
+		y -= current_speed; // Move up
+		direction = 90;
+	}
+	if (MOVE_DOWN)){
+		y += current_speed; // Move down
+		direction = 270;
+	}
 }
 
 // Tracking player movement speed

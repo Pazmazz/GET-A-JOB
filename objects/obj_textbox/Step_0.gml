@@ -40,10 +40,21 @@ if (text_progress == text_length){
 		if (confirm) {
 			var option = options[current_option];
 			
-			//Record the answer score
-			 if (instance_exists(obj_interview_controller)) {
+			//Record the answer score for the interview
+			if (instance_exists(obj_interview_controller)) {
 				 obj_interview_controller.record_answer(option.sscore);
-			 }
+			}
+			
+			// Record the answer score for the customer
+			if (instance_exists(obj_customer_controller)){
+				// Record answer for score for initial question (ignore or hear out the customer)
+				if (obj_customer_controller._init_phase_active){
+					obj_customer_controller.record_init_answer(option.sscore);
+				// Record answer for score for actual question
+				} else {
+					obj_customer_controller.record_answer(option.sscore);
+				}
+			}
 			 
 			options = [];
 			option_count = 0;

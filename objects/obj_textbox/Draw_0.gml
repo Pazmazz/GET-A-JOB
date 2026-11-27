@@ -1,11 +1,11 @@
 //Draws speaker box 
-var speaker_x_tb = camera_get_view_x(view_camera[0])+ 160;
+var speaker_x_tb = camera_get_view_x(view_camera[0]) + 160;
 var speaker_y_tb = camera_get_view_y(view_camera[0]) + 400;
 
 draw_sprite_stretched(spr_menu, 0, speaker_x_tb, speaker_y_tb, speaker_width_tb, speaker_height_tb);
 
 // Draws the textbox
-textbox_x = camera_get_view_x(view_camera[0])+ 160;
+textbox_x = camera_get_view_x(view_camera[0]) + 160;
 textbox_y = camera_get_view_y(view_camera[0]) + 464;
 
 draw_sprite_stretched(spr_menu, 0, textbox_x, textbox_y, textbox_width, textbox_height);
@@ -69,8 +69,8 @@ if (finished && option_count > 0) {
 	draw_set_valign(fa_middle);
 	draw_set_color(TEXT_COLOR);
 	for (var i = 0; i < option_count; i++) {
-		var opt_x = option_x;
-		var opt_y = option_y - (option_count - i - 1) * option_spacing;
+		var opt_x = camera_get_view_x(view_camera[0]) + option_x;
+		var opt_y = camera_get_view_y(view_camera[0]) + option_y - (option_count - i - 1) * option_spacing;
 		
 		// Selected option animation
 		if (i == current_option) {
@@ -95,4 +95,11 @@ if (finished && option_count > 0) {
 		draw_text(opt_x + option_text_x, opt_y, options[i].text);
 	}
 }
+
+// Reset the draw variables so it doesn't interfere with other objects
+draw_set_color(c_white);
+draw_set_alpha(1);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+draw_set_font(-1);
 

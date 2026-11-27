@@ -4,7 +4,7 @@ function scr_start_dialogue(dialogue_id){
     var textbox = instance_create_layer(
         0,
         0,
-        "Instances",
+        "Dialogue",
         obj_textbox
     );
 	textbox.set_topic(dialogue_id);

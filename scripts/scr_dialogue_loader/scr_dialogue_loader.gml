@@ -88,11 +88,18 @@ function json_reader(_path){
 				
 				//pass variables from choice to OPTIONS
 				case "choice":
-					array_push(actions, CHOICE(entry.content, 
-						OPTION(entry.options[0].content, entry.options[0].topic, entry.options[0].sscore),
-						OPTION(entry.options[1].content, entry.options[1].topic, entry.options[1].sscore),
-						OPTION(entry.options[2].content, entry.options[2].topic, entry.options[2].sscore))
-					);
+					if (array_length(entry.options) == 3){
+						array_push(actions, CHOICE(entry.content, 
+							OPTION(entry.options[0].content, entry.options[0].topic, entry.options[0].sscore),
+							OPTION(entry.options[1].content, entry.options[1].topic, entry.options[1].sscore),
+							OPTION(entry.options[2].content, entry.options[2].topic, entry.options[2].sscore))
+						);
+					} else if (array_length(entry.options) == 2){
+						array_push(actions, CHOICE(entry.content, 
+							OPTION(entry.options[0].content, entry.options[0].topic, entry.options[0].sscore),
+							OPTION(entry.options[1].content, entry.options[1].topic, entry.options[1].sscore))
+						);
+					}
 				break;
             }
         }

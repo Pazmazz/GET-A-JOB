@@ -1,5 +1,5 @@
 {
-    "ac_init" : [
+    "init_ac" : [
         {
             "type": "speaker",
             "name": "Anxious Customer"
@@ -11,12 +11,12 @@
             "options": [
                 {
                     "content": "Hear them out.",
-                    "topic": "ac_empty",
+                    "topic": "empty_ac",
                     "sscore": "hear"
                 },
                 {
                     "content": "Ignore.",
-                    "topic": "ac_empty",
+                    "topic": "empty_ac",
                     "sscore": "ignore"
                 }
             ]
@@ -35,24 +35,24 @@
             "options": [
                 {
                     "content": "In the back aisle.",
-                    "topic": "ac_q1_answer_1",
+                    "topic": "q1_ac_answer_1",
                     "sscore": "accept"
                 },
                 {
                     "content": "In the store.",
-                    "topic": "ac_q1_answer_2",
+                    "topic": "q1_ac_answer_2",
                     "sscore": "accept"
                 },
                 {
                     "content": "Under the sink.",
-                    "topic": "ac_q1_answer_3",
+                    "topic": "q1_ac_answer_3",
                     "sscore": "reject"
                 }
             ]
         }
     ],
 
-    "ac_q1_answer_1": [
+    "q1_ac_answer_1": [
         {
             "type": "speaker",
             "name": "Anxious Customer"
@@ -64,7 +64,7 @@
         }
     ],
 
-    "ac_q1_answer_2": [
+    "q1_ac_answer_2": [
         {
             "type": "speaker",
             "name": "Anxious Customer"
@@ -76,7 +76,7 @@
         }
     ],
 
-    "ac_q1_answer_3": [
+    "q1_ac_answer_3": [
         {
             "type": "speaker",
             "name": "Anxious Customer"
@@ -100,24 +100,24 @@
             "options": [
                 {
                     "content": "After I'm fired, yes.",
-                    "topic": "ac_q2_answer_1",
+                    "topic": "q2_ac_answer_1",
                     "sscore": "accept"
                 },
                 {
                     "content": "Maybe so, maybe not.",
-                    "topic": "ac_q2_answer_2",
+                    "topic": "q2_ac_answer_2",
                     "sscore": "accept"
                 },
                 {
                     "content": "Not if you can't form a full sentence.",
-                    "topic": "ac_q2_answer_3",
+                    "topic": "q2_ac_answer_3",
                     "sscore": "reject"
                 }
             ]
         }
     ],
 
-    "ac_q2_answer_1": [
+    "q2_ac_answer_1": [
         {
             "type": "speaker",
             "name": "Anxious Customer"
@@ -129,7 +129,7 @@
         }
     ],
 
-    "ac_q2_answer_2": [
+    "q2_ac_answer_2": [
         {
             "type": "speaker",
             "name": "Anxious Customer"
@@ -141,7 +141,7 @@
         }
     ],
 
-    "ac_q2_answer_3": [
+    "q2_ac_answer_3": [
         {
             "type": "speaker",
             "name": "Anxious Customer"
@@ -165,24 +165,24 @@
             "options": [
                 {
                     "content": "Yes...?",
-                    "topic": "ac_q3_answer_1",
+                    "topic": "q3_ac_answer_1",
                     "sscore": "accept"
                 },
                 {
                     "content": "You just did.",
-                    "topic": "ac_q3_answer_2",
+                    "topic": "q3_ac_answer_2",
                     "sscore": "accept"
                 },
                 {
                     "content": "Can you?",
-                    "topic": "ac_q3_answer_3",
+                    "topic": "q3_ac_answer_3",
                     "sscore": "reject"
                 }
             ]
         }
     ],
 
-    "ac_q3_answer_1": [
+    "q3_ac_answer_1": [
         {
             "type": "speaker",
             "name": "Anxious Customer"
@@ -194,7 +194,7 @@
         }
     ],
 
-    "ac_q3_answer_2": [
+    "q3_ac_answer_2": [
         {
             "type": "speaker",
             "name": "Anxious Customer"
@@ -206,7 +206,7 @@
         }
     ],
 
-    "ac_q3_answer_3": [
+    "q3_ac_answer_3": [
         {
             "type": "speaker",
             "name": "Anxious Customer"
@@ -218,7 +218,7 @@
         }
     ],
 
-    "ac_empty": [
+    "empty_ac": [
 
     ]
 }

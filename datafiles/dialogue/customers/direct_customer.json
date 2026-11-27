@@ -1,5 +1,5 @@
 {
-    "dc_init" : [
+    "init_dc" : [
         {
             "type": "speaker",
             "name": "Direct Customer"
@@ -11,12 +11,12 @@
             "options": [
                 {
                     "content": "Hear them out.",
-                    "topic": "dc_empty",
+                    "topic": "empty_dc",
                     "sscore": "hear"
                 },
                 {
                     "content": "Ignore.",
-                    "topic": "dc_empty",
+                    "topic": "empty_dc",
                     "sscore": "ignore"
                 }
             ]
@@ -35,24 +35,24 @@
             "options": [
                 {
                     "content": "Beside the registers.",
-                    "topic": "dc_q1_answer_1",
+                    "topic": "q1_dc_answer_1",
                     "sscore": "accept"
                 },
                 {
                     "content": "In that guy's car.",
-                    "topic": "dc_q1_answer_2",
+                    "topic": "q1_dc_answer_2",
                     "sscore": "reject"
                 },
                 {
                     "content": "We don't have one.",
-                    "topic": "dc_q1_answer_3",
+                    "topic": "q1_dc_answer_3",
                     "sscore": "reject"
                 }
             ]
         }
     ],
 
-    "dc_q1_answer_1": [
+    "q1_dc_answer_1": [
         {
             "type": "speaker",
             "name": "Direct Customer"
@@ -64,7 +64,7 @@
         }
     ],
 
-    "dc_q1_answer_2": [
+    "q1_dc_answer_2": [
         {
             "type": "speaker",
             "name": "Direct Customer"
@@ -76,7 +76,7 @@
         }
     ],
 
-    "dc_q1_answer_3": [
+    "q1_dc_answer_3": [
         {
             "type": "speaker",
             "name": "Direct Customer"
@@ -100,24 +100,24 @@
             "options": [
                 {
                     "content": "No...?",
-                    "topic": "dc_q2_answer_1",
+                    "topic": "q2_dc_answer_1",
                     "sscore": "accept"
                 },
                 {
                     "content": "I sent him to catch-em-all!",
-                    "topic": "dc_q2_answer_2",
+                    "topic": "q2_dc_answer_2",
                     "sscore": "reject"
                 },
                 {
                     "content": "No!",
-                    "topic": "dc_q2_answer_3",
+                    "topic": "q2_dc_answer_3",
                     "sscore": "reject"
                 }
             ]
         }
     ],
 
-    "dc_q2_answer_1": [
+    "q2_dc_answer_1": [
         {
             "type": "speaker",
             "name": "Direct Customer"
@@ -129,7 +129,7 @@
         }
     ],
 
-    "dc_q2_answer_2": [
+    "q2_dc_answer_2": [
         {
             "type": "speaker",
             "name": "Direct Customer"
@@ -141,7 +141,7 @@
         }
     ],
 
-    "dc_q2_answer_3": [
+    "q2_dc_answer_3": [
         {
             "type": "speaker",
             "name": "Direct Customer"
@@ -165,24 +165,24 @@
             "options": [
                 {
                     "content": "They're not here.",
-                    "topic": "dc_q3_answer_1",
+                    "topic": "q3_dc_answer_1",
                     "sscore": "accept"
                 },
                 {
                     "content": "They're on top of my screen.",
-                    "topic": "dc_q3_answer_2",
+                    "topic": "q3_dc_answer_2",
                     "sscore": "reject"
                 },
                 {
                     "content": "Nah, I'm cool.",
-                    "topic": "dc_q3_answer_3",
+                    "topic": "q3_dc_answer_3",
                     "sscore": "reject"
                 }
             ]
         }
     ],
 
-    "dc_q3_answer_1": [
+    "q3_dc_answer_1": [
         {
             "type": "speaker",
             "name": "Direct Customer"
@@ -194,7 +194,7 @@
         }
     ],
 
-    "dc_q3_answer_2": [
+    "q3_dc_answer_2": [
         {
             "type": "speaker",
             "name": "Direct Customer"
@@ -206,7 +206,7 @@
         }
     ],
 
-    "dc_q3_answer_3": [
+    "q3_dc_answer_3": [
         {
             "type": "speaker",
             "name": "Direct Customer"
@@ -218,7 +218,7 @@
         }
     ],
 
-    "dc_empty": [
+    "empty_dc": [
 
     ]
 }

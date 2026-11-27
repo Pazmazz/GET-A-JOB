@@ -7,6 +7,8 @@ walk_length = 50; // How far the customer wanders during wander mode
 is_moving = false; // If the NPC is in movement or not
 stuck_timer = 0; // Fail safe incase the NPC gets stuck on a wall
 
+interaction_started = false; // Tracks if the customer has started talking to the player 
+
 target_x = x;
 target_y = y;
 

@@ -73,7 +73,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.0.0.16",
+    "IDEVersion":"2026.1.1.34",
   },
   "name":"CartPusherSimulator",
   "resources":[
@@ -194,6 +194,7 @@
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
     {"roomId":{"name":"rm_mapgen_test2","path":"rooms/rm_mapgen_test2/rm_mapgen_test2.yy",},},
     {"roomId":{"name":"rm_boss_test","path":"rooms/rm_boss_test/rm_boss_test.yy",},},
+    {"roomId":{"name":"rm_customer_test","path":"rooms/rm_customer_test/rm_customer_test.yy",},},
     {"roomId":{"name":"rm_strange","path":"rooms/rm_strange/rm_strange.yy",},},
     {"roomId":{"name":"rm_customer_test","path":"rooms/rm_customer_test/rm_customer_test.yy",},},
     {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
@@ -202,7 +203,6 @@
     {"roomId":{"name":"rm_game_over_fired","path":"rooms/rm_game_over_fired/rm_game_over_fired.yy",},},
     {"roomId":{"name":"rm_game_over_dead","path":"rooms/rm_game_over_dead/rm_game_over_dead.yy",},},
     {"roomId":{"name":"rm_mapgen_test3","path":"rooms/rm_mapgen_test3/rm_mapgen_test3.yy",},},
-    {"roomId":{"name":"rm_customer_test","path":"rooms/rm_customer_test/rm_customer_test.yy",},},
     {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"roomId":{"name":"rm_cart_test","path":"rooms/rm_cart_test/rm_cart_test.yy",},},
     {"roomId":{"name":"rm_math_test","path":"rooms/rm_math_test/rm_math_test.yy",},},
